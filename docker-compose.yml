@@ -11,12 +11,12 @@ services:
       - db
     tty: true
     stdin_open: true
-db:
-  image: mysql@sha256:dce31fcdd15aaedb5591aa89f19ec37cb79981af46511781fa41287d88ed0abd
-  volumes:
-    - db-volume:/var/lib/mysql
-    - ./mysql-confd:/etc/mysql/conf.d
-  environment:
-    MYSQL_ROOT_PASSWORD: password
+  db:
+    image: mysql@sha256:dce31fcdd15aaedb5591aa89f19ec37cb79981af46511781fa41287d88ed0abd
+    volumes:
+      - db-volume:/var/lib/mysql
+      - ./mysql-confd:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: password
 volumes:
   db-volume:
