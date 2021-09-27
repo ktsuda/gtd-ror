@@ -95,8 +95,6 @@ Build the container again to reflect the modification above.
 docker-compose build
 ```
 
-## How to run the containers
-
 Launch containers in the background.
 
 ```bash
@@ -110,3 +108,13 @@ docker-compose run app rails db:create
 ```
 
 Finally, access `localhost:3000` with your web browser to check if you can see the default page.
+
+## How to run the containers
+
+Launch containers in the background.
+
+```bash
+docker-compose up -d
+```
+
+Access `localhost:3000` with your web browser to check if you can see the default page.
